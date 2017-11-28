@@ -198,6 +198,16 @@ body{
 @media (max-width: 1000px) {
 	.film-container {
     flex-direction: column;
+  }
+  .filmcover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .film-container {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
@@ -206,11 +216,6 @@ body{
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-  }
-  .filmcover {
-    position: relative;
-    display: flex;
-    justify-content: center;
   }
 }
 
