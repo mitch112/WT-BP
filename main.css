@@ -1,0 +1,79 @@
+body{
+	background:#999;
+	font-family: impact;	
+	
+}
+
+.menu{
+	word-spacing: 30px;
+	background: green;
+	max-width: 1300px;
+	line-height: 1;
+	max-width: 1300px;
+	display: flex;
+	align-self: center;
+}
+
+.menuinner{
+	margin: 40px auto 0 auto;
+	padding: 20px 50px;
+	background-color: red;
+	padding: 20px;
+	align-items: center;
+}
+
+.container {
+	background: white;
+	padding: 20px;		
+}
+
+.form-row {
+	display: flex;
+	padding: 10px;
+	display: flex;	
+	padding-left: 20px;
+}
+
+.form-row label{
+	padding-right: 20px;
+	}
+
+.form-row input {
+	flex: 1;
+}
+
+.Abonnementen{
+	max-width: 1300px;
+	background-color: #FFF;
+	margin: 40px auto 0 auto;
+	line-height: 1;
+	padding: 20px 50px;
+	display: flex;
+	justify-content:space-between;
+}
+
+.Abonnement{
+	margin-bottom: 20px;
+	background-color: #999;
+	padding: 20px 20px;
+	width:30%;
+	box-sizing: border-box;
+}
+
+.overons{
+	max-width: 1400px;
+	margin: 40px auto 0 auto;
+	display: flex;
+	justify-content:space-between;
+}
+
+.tekst{
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	width: 30%;
+}
+
+.tekst:nth-child(1) {background-color: #c0dbe2;}
+.tekst:nth-child(2) {background-color: #cdf1c3;}
+.tekst:nth-child(3) {background-color: #ccb9da;}
