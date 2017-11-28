@@ -212,14 +212,16 @@ body{
     margin-left: 0%;
     margin-right: 0%;
   }
+}
+@media (max-width: 400px)  {
   .filmoverzichtlinks {
     overflow: hidden;
   }
   .filmcover img {
     display:block;
     margin:0 -10%;
-    height: 77.77%;
-    width:77.77%;
+    height: 90%;
+    width: 90%;
  }
 }
 
