@@ -1,6 +1,6 @@
 @import "compass/css3";
 
-.navigation {
+.navigatie {
   list-style: none;
   margin: 0;  
   background: deepskyblue; 
@@ -13,31 +13,31 @@
   justify-content: flex-end;
 }
 
-.navigation a {
+.navigatie a {
   text-decoration: none;
   display: block;
   padding: 1em;
   color: white;
 }
 
-.navigation a:hover {
+.navigatie a:hover {
   background: darken(deepskyblue, 5%);
 }
 
 @media all and (max-width: 800px) {
-  .navigation {
+  .navigatie {
     justify-content: space-around;
   }
 }
 
 @media all and (max-width: 600px) {
-  .navigation {
+  .navigatie {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
   
-  .navigation a { 
+  .navigatie a { 
     text-align: center; 
     padding: 10px;
     border-top: 1px solid rgba(255,255,255,0.3); 
@@ -45,20 +45,23 @@
   }
 
   
-  .navigation li:last-of-type a {
+  .navigatie li:last-of-type a {
     border-bottom: none;
   }
 }
 
 body{
 	background:#999;
-	font-family: impact;		
+	font-family: arial;		
 }
 
+
+
 .loginForm {
-	background: white;
+	background: deepskyblue;
 	padding: 20px;
-	margin: 20px 20px 20px 20px;		
+	margin: 20px 20px 20px 20px;
+	color: white;		
 }
 
 .formRow {
