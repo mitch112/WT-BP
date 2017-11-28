@@ -148,3 +148,71 @@ body{
 		margin-right: 0%;
 	}
 }
+
+.filmoverzicht-container {
+  max-width: 100%;
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+  margin 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.film-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.filmoverzichtlinks {
+  padding: 10px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.filmtitel {
+  text-align: center;
+}
+
+.filmcover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.filmoverzichtrechts {
+  padding: 10px;
+  flex: 1;
+  text-align: left;
+}
+
+.trailerbar {
+  text-align: center;
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media (max-width: 1000px) {
+	.film-container {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .trailerbar {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .filmcover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.filmoverzichtlinks:nth-child(1) {background-color: deepskyblue}
+.filmoverzichtrechts:nth-child(2) {background-color: deepskyblue}
