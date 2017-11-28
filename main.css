@@ -140,7 +140,7 @@ body{
 	flex-direction: column;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 	.trailerBox {
 		width: 100%;
 		height: 100%;
