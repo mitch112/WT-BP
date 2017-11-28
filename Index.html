@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-  <html lang=”NL”>
+  <html lang="NL">
     <head>
 	  <title> title van je pagina </title>
-      <meta charset=”utf-8”>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="main.css" type="text/css" media="screen">
 	</head>
 
 	<body>
-      <div class="menu">
-	    <div class="menuinner">
-	      <a href="Index.html" style="margin-right:5px">Index</a>
-	      <a href="Filmoverzicht.html" style="margin-right:5px">Filmoverzicht</a>
-	      <a href="Film.html" style="margin-right:5px">Film</a>
-	      <a href="Afspelen.html" style="margin-right:5px">Afspelen</a>
-	      <a href="Overons.html" style="margin-right:5px">Overons</a>
-	      <a href="Abonnement.html" style="margin-right:5px">Abonnement</a>
-	    </div>
-	  </div>
 
-	  <div class="container">
+      <ul class="navigation">
+        <li><a href="Index.html">Home</a></li>
+  		<li><a href="Filmoverzicht.html">Filmoverzicht</a></li>
+  		<li><a href="Overons.html">Over ons</a></li>
+  		<li><a href="Abonnement.html">Abonnement</a></li>
+      </ul>
+
+	  <div class="loginForm">
 	  	  <form action=""> 	
-	  	  	<div class="form-row">
+	  	  	<div class="formRow">
 	  	  		<label for="Inlognaam">Inlognaam:</label>
 	  	  		<input type="text" id="login">
 	  	  	</div>
-	  	  	<div class="form-row">
+	  	  	<div class="formRow">
 	  	  		<label for="Wachtwoord">Wachtwoord:</label>
 	  	  		<input type="text" id="password">
 	  	  	</div>

@@ -1,44 +1,77 @@
+@import "compass/css3";
+
+.navigation {
+  list-style: none;
+  margin: 0;  
+  background: deepskyblue; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: darken(deepskyblue, 5%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
 body{
 	background:#999;
-	font-family: impact;	
-	
+	font-family: impact;		
 }
 
-.menu{
-	word-spacing: 30px;
-	background: green;
-	max-width: 1300px;
-	line-height: 1;
-	max-width: 1300px;
-	display: flex;
-	align-self: center;
-}
-
-.menuinner{
-	margin: 40px auto 0 auto;
-	padding: 20px 50px;
-	background-color: red;
-	padding: 20px;
-	align-items: center;
-}
-
-.container {
+.loginForm {
 	background: white;
-	padding: 20px;		
+	padding: 20px;
+	margin: 20px 20px 20px 20px;		
 }
 
-.form-row {
+.formRow {
 	display: flex;
-	padding: 10px;
-	display: flex;	
+	padding: 10px;	
 	padding-left: 20px;
 }
 
-.form-row label{
+.formRow label{
 	padding-right: 20px;
 	}
 
-.form-row input {
+.formRow input {
 	flex: 1;
 }
 
