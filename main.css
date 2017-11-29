@@ -51,7 +51,8 @@
 }
 
 body{
-	background:#999;
+	background-image: url(images/WebTechBackground.png);
+	background-repeat: no-repeat;
 	font-family: arial;
 }
 
