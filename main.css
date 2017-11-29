@@ -53,6 +53,8 @@
 body{
 	background-image: url(images/WebTechBackground.png);
 	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%
 	font-family: arial;
 }
 
