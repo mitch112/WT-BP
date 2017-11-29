@@ -99,11 +99,14 @@ width: 100%;
 .foto{
 	width: 80%;
 	align-self: center;
+	margin: auto;
 }
 
 .flex-content{
 	margin: auto;
 }
+
+
 
 .abonnementForm {
 	width: 90%;
@@ -153,7 +156,10 @@ width: 100%;
 
 	.flex-content{
 	 display: flex;
-		}	
+		}
+
+.filmoverzicht{
+	display: flex;	
 }
 
 .videoWrapper {
