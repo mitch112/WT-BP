@@ -86,6 +86,15 @@ width: 100%;
 	flex: 1;	
 }
 
+.prijs{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 150px;
+  height: 150px;
+  margin:2%;
+}
+
 .flexbox{
 	display: flex;
 	flex-direction: column;
@@ -112,8 +121,6 @@ width: 100%;
 .flex-content{
 	margin: auto;
 }
-
-
 
 .abonnementForm {
 	width: 90%;
