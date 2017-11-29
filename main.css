@@ -177,7 +177,6 @@ body{
 }
 
 .filmcover {
-  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -196,9 +195,25 @@ body{
   color: black;
 }
 
+@media (min-width: 100px) {
+  .filmcover img {
+    display:block;
+    margin:0 -30%;
+    height: 70%;
+    width: 70%;
+  }
+}
+
 @media (max-width: 1000px) {
 	.film-container {
     flex-direction: column;
+  }
+
+  .filmcover img {
+    display:block;
+    margin:0 -30%;
+    height: 70%;
+    width: 70%;
   }
 }
 
@@ -212,12 +227,6 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-  }
-  .filmcover img {
-    display:block;
-    margin:0 -30%;
-    height: 70%;
-    width: 70%;
   }
 }
 
@@ -234,12 +243,6 @@ body{
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-  }
-  .filmcover img {
-    display:block;
-    margin:0 -30%;
-    height: 70%;
-    width: 70%;
   }
 }
 
