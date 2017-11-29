@@ -63,9 +63,14 @@ nav a:hover{
 }
 
 .tekst{
-	color: black;
-	background-color: #666668;
+	background-image: url("img/TekstBackground.jpg");
+	background-size: cover;
+	color: white;
 	flex: 1;	
+}
+
+.info{
+	text-align: left;
 }
 
 .trailer{
@@ -74,7 +79,9 @@ nav a:hover{
 
 .foto{
 	width: 80%;
+	align-self: center;
 }
+
 
 .abonnementForm {
 	width: 90%;
