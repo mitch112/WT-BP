@@ -1,8 +1,13 @@
 *{
 	h1, h2, h3, h4, h5, h6, a, span, p, td, li {}
--webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
 }
+
 
 body{
 	background-image: url("img/background.jpg");
@@ -26,7 +31,7 @@ nav ul{
 
 nav a{
 	text-decoration: none;
-	color: #fff;
+	color: #f4b042;
 	display: block;
 	padding: 10px;
 	text-align: center;
@@ -40,8 +45,11 @@ nav a:hover{
 	width: 90%;
 	max-width: 940px;
 	margin: 2% auto;
-	background: #333; 
-	
+	background-image: url("img/backgroundLayer.png"); 
+}
+
+.flex-content{
+width: 100%;
 }
 
 .box{
@@ -55,6 +63,8 @@ nav a:hover{
 .knop{
 	background: black;
 	color: white;
+	flex: 0;
+	margin: auto auto 0 auto;
 }
 
 .box a{
@@ -65,8 +75,13 @@ nav a:hover{
 .tekst{
 	background-image: url("img/TekstBackground.jpg");
 	background-size: cover;
-	color: white;
+	color: #f4b042;
 	flex: 1;	
+}
+
+.flexbox{
+	display: flex;
+	flex-direction: column;
 }
 
 .info{
@@ -76,12 +91,19 @@ nav a:hover{
 .trailer{
 	text-align: left;
 }
+.trailertekst{
+	text-align: left;
+	color: white;
+}
 
 .foto{
 	width: 80%;
 	align-self: center;
 }
 
+.flex-content{
+	margin: auto;
+}
 
 .abonnementForm {
 	width: 90%;
@@ -134,20 +156,6 @@ nav a:hover{
 		}	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -162,6 +170,20 @@ nav a:hover{
 	height: 100%;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .trailerBox {
 	align-self: center;
