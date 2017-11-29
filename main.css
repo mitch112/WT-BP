@@ -151,7 +151,7 @@ body{
 
 .filmoverzicht-container {
   max-width: 100%;
-  padding-top: 10px;
+  padding-top: 30px;
   text-decoration: none;
   color: white;
   margin 0 auto;
@@ -193,6 +193,7 @@ body{
   background-color: white;
   margin-left: 15%;
   margin-right: 15%;
+  color: black;
 }
 
 @media (max-width: 1000px) {
@@ -225,6 +226,11 @@ body{
     overflow: hidden;
   }
   .film-container {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .trailerbar {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
