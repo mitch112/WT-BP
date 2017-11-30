@@ -2,7 +2,7 @@
 
 *{
 	h1, h2, h3, h4, h5, h6, a, span, p, td, li {}
-
+	
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
   	font-family: 'Exo', sans-serif;
@@ -51,7 +51,7 @@ nav a:hover{
 	width: 90%;
 	max-width: 940px;
 	margin: 2% auto;
-	background-image: url("img/backgroundLayer.png");
+	background-image: url("img/backgroundLayer.png"); 
 }
 
 .flex-content{
@@ -64,7 +64,7 @@ flex-wrap: wrap;
 	margin:2%;
 	padding: 2%;
 	text-align: center;
-	flex:1 1 0;
+	flex:1 1 0;	
 }
 
 .knop{
@@ -80,14 +80,22 @@ flex-wrap: wrap;
 
 .box a{
 	text-decoration: none;
-	color:white;
+	color:white;	
 }
 
 .tekst{
 	background-image: url("img/Tekstbackground1.png");
 	background-size: cover;
 	color: #f4b042;
-	flex: 1;
+	flex: 1;	
+}
+
+.accountgegevens{
+	background-image: url("img/Tekstbackground1.png");
+	background-size: cover;
+	color: #f4b042;
+	flex: 1;	
+	text-align: left;
 }
 
 .prijs{
@@ -102,8 +110,10 @@ flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
 	min-width: 25%;
-	padding: 2%;
+	padding: 2%;	
 }
+
+.flexbox>div
 
 .info{
 	text-align: left;
@@ -155,7 +165,7 @@ flex-wrap: wrap;
 
 .abonnementFormRow {
 	display: flex;
-	padding: 1%;
+	padding: 1%; 
 }
 
 .abonnementFormRow label{
@@ -167,9 +177,19 @@ flex-wrap: wrap;
 }
 
 .videoWrapper {
-	flex: 1;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
 }
 
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 @media screen and (min-width: 768px){
 	nav ul{
@@ -199,20 +219,122 @@ flex-wrap: wrap;
 		}
 
 .filmoverzicht{
-	display: flex;
+	display: flex;	
 }
 
 .abonnementFormRow input {
 	flex: 1 1 0;
 }
 
-.videoWrapper {
-	flex: 1;
 }
 
-video {
-	width: 100%
-	height: auto;
+
+
+
+
+
+
+
+
+
+
+
+
+.trailerBox {
+	align-self: center;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
+.textContainer {
+	display: flex;
+	flex-direction: column;
 }
+
+@media (max-width: 600px) {
+	.trailerBox {
+		width: 100%;
+		height: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+
+.filmoverzicht-container {
+  max-width: 100%;
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+  margin 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.film-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.filmoverzichtlinks {
+  padding: 10px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.filmtitel {
+  text-align: center;
+}
+
+.filmcover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.filmoverzichtrechts {
+  padding: 10px;
+  flex: 1;
+  text-align: left;
+}
+
+.trailerbar {
+  text-align: center;
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media (max-width: 1000px) {
+	.film-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .film-container {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .trailerbar {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+@media (max-width: 400px)  {
+  .filmoverzichtlinks {
+    overflow: hidden;
+  }
+  .filmcover img {
+    display:block;
+    margin:0 -10%;
+    height: 90%;
+    width: 90%;
+ }
+}
+
+.filmoverzichtlinks:nth-child(1) {background-color: deepskyblue}
+.filmoverzichtrechts:nth-child(2) {background-color: deepskyblue}
