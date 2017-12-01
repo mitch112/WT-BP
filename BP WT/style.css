@@ -113,8 +113,6 @@ flex-wrap: wrap;
 	padding: 2%;
 }
 
-.flexbox>div
-
 .info{
 	text-align: left;
 }
@@ -178,7 +176,7 @@ flex-wrap: wrap;
 
 .videoWrapper {
 	position: relative;
-	padding-bottom: 80%;
+	padding-bottom: 70%;
 	padding-top: 25px;
 	height: 0;
 }
